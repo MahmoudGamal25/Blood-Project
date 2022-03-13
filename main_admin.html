@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Blood Donors</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                transition: none;
+                box-sizing: border-box
+            }
+            .right{float: right}
+            .clear{clear: both;}
+            #navbar .right-icons span a{color: black}
+            #navbar .right-icons span a:hover{color: #FA6703}
+            .info{padding:120px 0}
+            .info .setting {padding: 5px 0}
+            .info .setting .info-list{list-style:none;}
+            .info .setting .info-list li{padding: 15px 0;font-size: 20px}
+            .info-list .selected{color: #FA6703}
+            .info .setting .info-list li:hover{color: #FA6703;cursor: pointer;}
+            .info .info-content>div:not(:first-child){display: none}
+            .hidden{display: none}
+            .show{display: block}  
+
+        </style>
+    </head>
+
+    <body>
+            <section id="navbar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html" style="font-size: 20px;
+                        color: #080;
+                        font-weight: 600;">
+                    <span style="color: #FA6703">BLOOD</span><span style="color: gray">DONORS</span>
+                    <i class="fab fa-pagelines"></i></a>        
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                      
+                        <div class="offset-md-9 collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="right-icons">
+                                    <span>
+                                        <a href="login.html" style="text-decoration: none;font-size:25px;font-weight: bold" class="change-color">Logout</a> 
+                                    </span>
+                            </div>
+                        </div>
+                    </nav>
+                </div>       
+                </section>
+        <!--..........................................................................................-->
+            <div class="info">
+                <div class="container">
+                    <div class="row">
+                        <div class="setting col-md-2">
+                            <h2 style="letter-spacing: 2px">SETTING</h2>
+                            <hr>
+                            <ul class="info-list">
+                                <li data-class="inbox"><i class="fa fa-envelope"style="font-size: 20px"></i> Inbox</li>
+                                <li data-class="search-donors"><i class="fa fa-search"style="font-size: 20px"></i> Search Donors</li>
+                                <li data-class="active-donor" ><i class="fa fa-users" style="font-size: 20px"></i> Active Donor</li>
+                                <li data-class="not-active-donor"><i class="fa fa-users" style="font-size: 20px"></i> Not Active</li>
+                                <li data-class="need-blood"><i class="fa fa-briefcase" style="font-size: 20px"></i> Need Blood</li>
+                            </ul>
+                        </div>
+                        <div class=".info-content col-md-9 offset-md-1">
+                            <div class="inbox hidden">
+                                <h2><i class="fa fa-envelope"style="font-size: 30px;color:red"></i> Inbox</h2>
+                                <hr>
+                            </div>
+                            <div class="search-donors hidden">
+                                <h2><i class="fa fa-search"style="font-size: 30px"></i> Search Donors</h2>
+                                <hr>
+                                <div><input type="text" style="padding: 15px;border-radius:10px;border: none" placeholder="search" class="col-md-12" name="search"></div>
+                            </div>
+                            <div class="active-donor hidden">
+                                <h2><i class="fa fa-users"style="font-size: 30px;color:green"></i> Active Donor</h2>
+                                <hr>
+                            </div>
+                            <div class="not-active-donor hidden">
+                                <h2><i class="fa fa-users"style="font-size: 30px;color:red"></i> Not Active</h2>
+                                <hr>
+                            </div>
+                            <div class="need-blood hidden">
+                                <h2><i class="fa fa-briefcase"style="font-size: 30px"></i> Need Blood</h2>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--..........................................................................................-->
+        <hr style="margin-bottom: 0;margin-top: 0">
+        <section id="footer">
+            <div class="short-links text-center">
+                <ul class="list-inline">
+                    <li class="list-inline-item ">Home</li>
+                    <li class="list-inline-item">Support</li>
+                    <li class="list-inline-item">Privacy</li>
+                    <li class="list-inline-item">Terms</li>
+                </ul>
+            </div>
+            <div class="text-center social-icons">
+                    <span>
+                        <i class="fab fa-facebook-square"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-twitter-square"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>
+                        <i class="fab fa-behance-square"></i>
+                    </span>
+            </div>
+            <hr style="margin-bottom: 5px;">
+            <div class="text-center">Copyright &copy; 2019 All Rights Reserved.</div>
+            </section>
+            <script src="js/jquery-3.4.1.min.js"></script>
+            <script src="js/all.min.js"></script>        
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/custom.js"></script>
+    </body>
+</html>
